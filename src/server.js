@@ -7,21 +7,21 @@ const errorHandler = require('../handlers/500');
 const app = express();
 
 app.get("/", (req, res) => {
-    res.status(200).send('hello');
+    res.status(200).send('Server is Working fine');
 });
 
 app.get("/data", (req, res) => {
     res.json({
         id: 1,
-        name: 'ahmad helwa',
-        email: 'ahmad.h@gmail.com'
+        name: 'hamzeh Fakhreddin',
+        email: 'hamzabashar2000@gmail.com'
     });
 });
 app.get('/test', stamper, (req, res) => {
     res.json({
         id: 2,
         name: 'test',
-        email: 'test@gmail.com',
+        email: 'testing@gmail.com',
         time: req.timeStamp
     });
 });
